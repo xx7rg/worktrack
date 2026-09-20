@@ -1,0 +1,10 @@
+import fs from "node:fs";
+const path = "/home/ubuntu/worktrack/client/src/pages/Home.tsx";
+let s = fs.readFileSync(path, "utf8");
+const filterStart = s.indexOf('  const filteredJobs = useMemo(() => jobs.filter(j => {');
+const persistStart = s.indexOf('  function persist(', filterStart);
+if (filterStart < 0 || persistStart < 0) throw new Error('filter block not found');
+const cleanFilter = `  const filteredJobs = useMemo(() => jobs.filter(j => {\n    const query = search.trim().toLowerCase();\n    return (!query || \`\${j.title} \${j.client}\`.toLowerCase().includes(query)) && (!filterDate || j.date === filterDate) && (filterClient === "Todos" || j.client === filterClient) && (!selectedClient || j.client === selectedClient) && (filterCategory === "Todos" || j.title === filterCategory);\n  }), [jobs, search, filterDate, filterClient, filterCategory, selectedClient]);\n\n`;
+const monthly = `  const monthlyChartData = monthWeekRows.map(row => ({ label: row.label, ganho: row.gross, horas: row.hours, despesas: row.expense, liquido: row.net }));\n  const monthlyTooltip = ({ active, payload }: any) => { if (!active || !payload?.length) return null; const item = payload[0].payload; return <div className="chart-tooltip"><b>{item.label}</b><span>Bruto: {eur(item.ganho)}</span><span>Despesas: {eur(item.despesas)}</span><span>Líquido: {eur(item.liquido)}</span><span>Horas: {item.horas.toFixed(1).replace(".", ",")}h</span></div>; };\n\n`;
+s = s.slice(0, filterStart) + cleanFilter + monthly + s.slice(persistStart);
+fs.writeFileSync(path, s);

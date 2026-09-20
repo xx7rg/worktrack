@@ -1,0 +1,95 @@
+# WorkTrack — atualização de histórico
+
+- [x] Adicionar estado de trabalho em edição e reutilizar o formulário de novo trabalho.
+- [x] Implementar edição de registros com recálculo e persistência local.
+- [x] Implementar exclusão com confirmação para evitar remoções acidentais.
+- [x] Criar histórico completo com busca por texto, data, cliente e categoria.
+- [x] Adicionar estados vazios e contador de resultados filtrados.
+- [x] Validar responsividade e atualização do Dashboard após editar ou excluir.
+- [x] Criar metas configuráveis de ganhos e horas com progresso semanal.
+- [x] Implementar visão semanal com resumo e tabela de segunda a domingo.
+- [x] Implementar controle mensal com totais, médias e comparativo entre meses.
+- [x] Validar cálculos e navegação das novas visões.
+- [x] Alinhar o resumo semanal aos seis indicadores solicitados.
+- [x] Separar visualmente ganhos por dia, horas por dia e valor/hora.
+- [x] Reforçar no registro quais campos são preenchidos e quais são automáticos.
+- [x] Validar os cálculos do exemplo de trabalho e a responsividade.
+- [x] Criar aba dedicada de histórico completo com edição e exclusão.
+- [x] Adicionar seletor de semanas no topo e filtrar métricas e gráficos pela semana.
+- [x] Sincronizar barras de metas de ganhos e horas com a semana selecionada.
+- [x] Validar navegação, filtros, cálculos e responsividade da atualização.
+- [x] Remover registros fake e iniciar o aplicativo com estado vazio.
+- [x] Adicionar botões de semana anterior e próxima.
+- [x] Criar aba Visão Mensal com comparação entre semanas.
+- [x] Adicionar metas mensais de ganhos e horas.
+- [x] Validar estados vazios, cálculos e responsividade.
+- [x] Persistir registros, metas e semana selecionada no localStorage.
+- [x] Adicionar botão para retornar à semana atual.
+- [x] Criar edição visual das metas semanais e mensais.
+- [x] Validar recarga da aplicação, cálculos e responsividade.
+- [x] Copiar e preparar a imagem de logo enviada.
+- [x] Integrar a nova logo na barra lateral e metadados da aplicação.
+- [x] Validar enquadramento e legibilidade em desktop e mobile.
+- [x] Criar tratamento profissional para a logo PNG enviada.
+- [x] Integrar a marca sem fundo aparente e sem distorção.
+- [x] Validar aplicação em desktop e mobile.
+- [x] Conferir a referência pública da x7rG ENTERPRISE.
+- [x] Atualizar a assinatura auxiliar para “Projeto por x7rG ENTERPRISE”.
+- [x] Ajustar a tipografia e hierarquia do painel.
+- [x] Validar a composição final em desktop e mobile.
+- [x] Remover o crédito da área da logo.
+- [x] Adicionar “Projeto por x7rG ENTERPRISE” no rodapé final.
+- [x] Validar o rodapé em desktop e mobile.
+- [x] Converter os gráficos de desempenho para gráficos de pizza.
+- [x] Adicionar ano atual e direitos autorais no rodapé.
+- [x] Inserir uma linha divisória sutil no rodapé.
+- [x] Validar visualização e responsividade.
+- [x] Agregar ganhos e horas por cliente além da visão diária.
+- [x] Adicionar filtro de distribuição diária ou por cliente nos gráficos.
+- [x] Exibir valor exato e percentual nas fatias com dados.
+- [x] Validar legibilidade dos rótulos e estado vazio.
+- [x] Adicionar seleção de cliente ao clicar em uma fatia do gráfico.
+- [x] Filtrar o histórico detalhado pelo cliente selecionado.
+- [x] Adicionar controle para limpar a seleção e retornar à visão completa.
+- [x] Validar interação, cálculos e responsividade.
+- [x] Tornar clicáveis as fatias da visão diária para filtrar por data.
+- [x] Criar resumo financeiro do cliente selecionado no histórico.
+- [x] Sincronizar limpeza dos filtros e validar responsividade.
+- [x] Adicionar botão visível “Limpar todos os filtros” no topo do histórico.
+- [x] Sincronizar a limpeza com filtros e seleções dos gráficos.
+- [x] Validar histórico e responsividade.
+- [x] Reposicionar rótulos de valores e percentuais dentro das pizzas.
+- [x] Ocultar rótulos deslocados quando não houver dados.
+- [x] Validar alinhamento nas grades e em telas pequenas.
+- [x] Destacar a fatia selecionada após o clique.
+- [x] Adicionar alternador entre rótulos internos e legenda detalhada.
+- [x] Construir legenda detalhada responsiva ao lado do gráfico.
+- [x] Validar interação e leitura em desktop e mobile.
+- [x] Remover artefatos e linhas gerados pelo modo de rótulos internos.
+- [x] Definir uma visualização padrão limpa com legenda detalhada.
+- [x] Reconstruir o modo interno sem ultrapassar as grades.
+- [x] Validar os três gráficos em desktop e mobile.
+- [x] Adicionar hover suave e destaque temporário nas fatias.
+- [x] Incluir valores exatos e percentuais na legenda detalhada.
+- [x] Validar leitura, animação e responsividade.
+- [x] Aplicar hover e destaque aos gráficos da Visão Mensal.
+- [x] Tornar a legenda mensal clicável como filtro direto.
+- [x] Adicionar tooltip com despesas e valor líquido.
+- [x] Validar interações mensais e responsividade.
+- [x] Corrigir o clique de todos os itens da barra lateral.
+- [x] Garantir abertura das seções Trabalhos, Semana, Visão Mensal e Pagamentos.
+- [x] Definir comportamento claro para Configurações.
+- [x] Validar navegação em desktop e mobile.
+- [x] Adicionar calendário visível do mês atual com navegação mensal.
+- [x] Criar edição de perfil e persistir preferências locais.
+- [x] Adicionar alteração de tema visual em Configurações.
+- [x] Criar filtros de status e intervalo de datas em Pagamentos.
+- [x] Adicionar transição suave entre seções do menu.
+- [x] Validar a experiência completa em desktop e mobile.
+- [x] Diagnosticar por que os itens da barra lateral não respondem.
+- [x] Corrigir a navegação desktop e móvel sem alterar o calendário.
+- [x] Validar todos os cliques e destinos das seções.
+- [x] Redesenhar o cabeçalho e a grade do calendário mensal.
+- [x] Melhorar destaque de hoje, dias com trabalhos e seleção de data.
+- [x] Ajustar navegação mensal e responsividade.
+- [x] Validar a nova apresentação em desktop e mobile.
