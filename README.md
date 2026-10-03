@@ -4,6 +4,8 @@
 
 # WorkTrack
 
+[![CI](https://github.com/xx7rg/worktrack/actions/workflows/ci.yml/badge.svg)](https://github.com/xx7rg/worktrack/actions/workflows/ci.yml)
+
 <img src="docs/images/project.svg" alt="WorkTrack — painel de gestão de trabalhos" width="680" />
 
 **Transforme horas trabalhadas em uma visão clara de receitas, despesas, pagamentos e metas.**
@@ -65,7 +67,7 @@ O WorkTrack inicia vazio. Depois do primeiro registro, o mesmo conjunto de dados
 
 ## Executar localmente
 
-Requer **Node.js 20.19+ ou 22.12+** e **pnpm 10**.
+Requer **Node.js 20.19+ ou 22.12+** e **pnpm 10.34.5**, versão fixada em `packageManager`.
 
 ```bash
 git clone https://github.com/xx7rg/worktrack.git
@@ -83,8 +85,20 @@ Abra o endereço exibido pelo Vite no terminal. Em discos que não suportam link
 | `pnpm dev` | Inicia o ambiente de desenvolvimento. |
 | `pnpm check` | Verifica os tipos TypeScript. |
 | `pnpm build` | Gera o frontend e o servidor em `dist/`. |
+| `pnpm test` | Após o build, verifica a página, as rotas e os arquivos estáticos no servidor compilado. |
 | `pnpm preview` | Abre uma prévia do frontend compilado. |
 | `pnpm start` | Executa o servidor compilado após o build. |
+
+O CI instala pelo lockfile e executa a verificação de tipos, o build, o teste
+do servidor e a auditoria de dependências. Para repetir essas verificações:
+
+```bash
+pnpm install --frozen-lockfile
+pnpm check
+pnpm build
+pnpm test
+pnpm audit --audit-level high
+```
 
 ## Estrutura principal
 
